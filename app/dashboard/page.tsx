@@ -135,7 +135,7 @@ export default function DashboardPage() {
                         className={`w-full ${guide.featured ? 'bg-green-600 hover:bg-green-700' : ''}`}
                         asChild
                       >
-                        <Link href={`/api/downloads?file=${guide.filename}`}>
+                        <Link href="/downloads">
                           <Download className="mr-2 h-4 w-4" />
                           Download Free
                         </Link>

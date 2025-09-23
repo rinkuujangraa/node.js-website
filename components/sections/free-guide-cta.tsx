@@ -96,7 +96,7 @@ export function FreeGuideCTA() {
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg py-6"
                   asChild
                 >
-                  <Link href="/api/downloads?file=financial-planning-starter-guide.pdf">
+                  <Link href="/downloads">
                     <Download className="mr-2 h-5 w-5" />
                     Download FREE Guide
                   </Link>
