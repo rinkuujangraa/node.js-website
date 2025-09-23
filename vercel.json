@@ -1,0 +1,9 @@
+{
+  "buildCommand": "prisma generate && next build",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "env": {
+    "NEXTAUTH_URL": "https://financial-guide-6xo9ss238-angry2.vercel.app",
+    "NEXTAUTH_SECRET": "@nextauth_secret"
+  }
+}
