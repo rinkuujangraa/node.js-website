@@ -103,11 +103,15 @@ export function Header() {
               </DropdownMenu>
             ) : (
               <div className="flex items-center space-x-2">
-                <Button variant="ghost" onClick={() => signIn()}>
-                  Sign In
+                <Button variant="ghost" asChild>
+                  <Link href="/auth/signin">
+                    Sign In
+                  </Link>
                 </Button>
-                <Button onClick={() => signIn()}>
-                  Get Started
+                <Button asChild>
+                  <Link href="/auth/signup">
+                    Get Started
+                  </Link>
                 </Button>
               </div>
             )}
@@ -166,11 +170,15 @@ export function Header() {
                   </div>
                 ) : (
                   <div className="px-3 py-2 space-y-2">
-                    <Button variant="ghost" className="w-full justify-start" onClick={() => signIn()}>
-                      Sign In
+                    <Button variant="ghost" className="w-full justify-start" asChild>
+                      <Link href="/auth/signin" onClick={() => setIsMenuOpen(false)}>
+                        Sign In
+                      </Link>
                     </Button>
-                    <Button className="w-full" onClick={() => signIn()}>
-                      Get Started
+                    <Button className="w-full" asChild>
+                      <Link href="/auth/signup" onClick={() => setIsMenuOpen(false)}>
+                        Get Started
+                      </Link>
                     </Button>
                   </div>
                 )}
