@@ -45,12 +45,12 @@ export function Footer() {
                 <span>support@moneyzenguide.com</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-400">
-                <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <Mail className="h-4 w-4" />
+                <span>contact@moneyzenguide.com</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-400">
                 <MapPin className="h-4 w-4" />
-                <span>New York, NY</span>
+                <span>Online Financial Education Services</span>
               </div>
             </div>
           </div>
