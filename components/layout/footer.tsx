@@ -14,8 +14,8 @@ export function Footer() {
     company: [
       { name: 'About Us', href: '/contact' },
       { name: 'Contact', href: '/contact' },
-      { name: 'Privacy Policy', href: '/contact' },
-      { name: 'Terms of Service', href: '/contact' },
+      { name: 'Privacy Policy', href: '/privacy' },
+      { name: 'Terms of Service', href: '/terms' },
     ],
     support: [
       { name: 'FAQ', href: '/faq' },
@@ -113,13 +113,13 @@ export function Footer() {
               © {currentYear} MoneyZenGuide. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/contact" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/contact" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Terms of Service
               </Link>
-              <Link href="/contact" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Cookie Policy
               </Link>
             </div>
