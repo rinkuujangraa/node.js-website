@@ -5,6 +5,7 @@ import { Providers } from './providers'
 import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
 import { Analytics } from '@/components/analytics'
+import { CookieConsent } from '@/components/cookie-consent'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -64,6 +65,7 @@ export default function RootLayout({
             <Footer />
           </div>
           <Analytics />
+          <CookieConsent />
         </Providers>
       </body>
     </html>
