@@ -225,10 +225,4 @@ export function CookieConsent() {
   )
 }
 
-// Extend Window interface for TypeScript
-declare global {
-  interface Window {
-    gtag?: (...args: any[]) => void
-    fbq?: (...args: any[]) => void
-  }
-}
+// TypeScript declarations are handled in types/next-auth.d.ts
