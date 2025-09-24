@@ -21,3 +21,10 @@ declare module "next-auth/jwt" {
     role?: string
   }
 }
+
+// Microsoft Advertising UET tracking
+declare global {
+  interface Window {
+    uetq: any[]
+  }
+}
