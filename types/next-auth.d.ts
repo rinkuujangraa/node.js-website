@@ -26,5 +26,7 @@ declare module "next-auth/jwt" {
 declare global {
   interface Window {
     uetq: any[]
+    gtag: (...args: any[]) => void
+    fbq: (...args: any[]) => void
   }
 }

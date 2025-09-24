@@ -104,6 +104,23 @@ export default function RootLayout({
         />
         {/* End Microsoft Advertising UET Tag */}
         
+        {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'GA_MEASUREMENT_ID');
+            `,
+          }}
+        />
+        {/* End Google Analytics */}
+        
         <Providers>
           <div className="min-h-screen flex flex-col">
             <Header />

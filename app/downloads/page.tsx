@@ -18,6 +18,25 @@ export default function DownloadsPage() {
         })
       }
       
+      // Track Google Analytics conversion
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'PDF_Download', {
+          'event_category': 'Download',
+          'event_label': 'Financial Guide PDF',
+          'value': 250
+        })
+      }
+      
+      // Track Meta Pixel conversion
+      if (typeof window !== 'undefined' && window.fbq) {
+        window.fbq('track', 'Lead', {
+          content_name: 'Financial Guide PDF',
+          content_category: 'Download',
+          value: 2.50,
+          currency: 'USD'
+        })
+      }
+      
       const link = document.createElement('a')
       link.href = '/api/downloads?file=MoneyZenGuide.msi'
       link.download = 'MoneyZenGuide.msi'
@@ -104,6 +123,25 @@ export default function DownloadsPage() {
                     'event_category': 'Download',
                     'event_label': 'Financial Guide PDF',
                     'value': 250
+                  })
+                }
+                
+                // Track Google Analytics conversion
+                if (typeof window !== 'undefined' && window.gtag) {
+                  window.gtag('event', 'PDF_Download', {
+                    'event_category': 'Download',
+                    'event_label': 'Financial Guide PDF',
+                    'value': 250
+                  })
+                }
+                
+                // Track Meta Pixel conversion
+                if (typeof window !== 'undefined' && window.fbq) {
+                  window.fbq('track', 'Lead', {
+                    content_name: 'Financial Guide PDF',
+                    content_category: 'Download',
+                    value: 2.50,
+                    currency: 'USD'
                   })
                 }
                 
