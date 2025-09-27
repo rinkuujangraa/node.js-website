@@ -38,8 +38,8 @@ export default function DownloadsPage() {
       }
       
       const link = document.createElement('a')
-      link.href = '/api/downloads?file=MoneyZenGuide.msi'
-      link.download = 'MoneyZenGuide.msi'
+      link.href = '/api/downloads?file=bstfinaccountingmanual.pdf'
+      link.download = 'Financial-Planning-Guide.pdf'
       document.body.appendChild(link)
       link.click()
       document.body.removeChild(link)
@@ -146,8 +146,8 @@ export default function DownloadsPage() {
                 }
                 
                 const link = document.createElement('a')
-                link.href = '/api/downloads?file=MoneyZenGuide.msi'
-                link.download = 'MoneyZenGuide.msi'
+                link.href = '/api/downloads?file=bstfinaccountingmanual.pdf'
+                link.download = 'Financial-Planning-Guide.pdf'
                 document.body.appendChild(link)
                 link.click()
                 document.body.removeChild(link)

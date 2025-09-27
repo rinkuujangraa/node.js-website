@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    default: 'MoneyZenGuide - Your Path to Financial Zen',
+    default: 'MoneyZenGuide - Your Path to Financial Freedom',
     template: '%s | MoneyZenGuide'
   },
   description: 'Discover financial peace with MoneyZenGuide. Expert financial planning, calculators, and strategies to achieve your money goals with confidence.',
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://moneyzenguide.com',
-    title: 'MoneyZenGuide - Your Path to Financial Zen',
+    title: 'MoneyZenGuide - Your Path to Financial Freedom',
     description: 'Discover financial peace with MoneyZenGuide. Expert financial planning, calculators, and strategies to achieve your money goals with confidence.',
     siteName: 'MoneyZenGuide',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MoneyZenGuide - Your Path to Financial Zen',
+    title: 'MoneyZenGuide - Your Path to Financial Freedom',
     description: 'Discover financial peace with MoneyZenGuide. Expert financial planning, calculators, and strategies to achieve your money goals with confidence.',
     creator: '@moneyzenguide',
   },
@@ -103,6 +103,22 @@ export default function RootLayout({
           }}
         />
         {/* End Microsoft Advertising UET Tag */}
+        
+        {/* Google Ads Conversion Tracking */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17597772381"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17597772381');
+            `,
+          }}
+        />
         
         {/* Google Analytics */}
         <script
