@@ -20,12 +20,12 @@ export function FreeGuideCTA() {
             LIMITED TIME OFFER
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Get Your FinanceWise Guide
-            <span className="block text-blue-200">100% FREE!</span>
+            Download MoneyZenGuide
+            <span className="block text-blue-200">Windows App - FREE!</span>
           </h2>
           <p className="text-lg md:text-xl mb-8 text-blue-100 max-w-4xl mx-auto">
-            Join over <strong className="text-blue-200">12,000+ people</strong> who have already downloaded our comprehensive FinanceWise financial planning guide. 
-            Start your journey to financial freedom today!
+            Join over <strong className="text-blue-200">15,000+ users</strong> who have downloaded our powerful Windows desktop application. 
+            Advanced financial tools, calculators, and portfolio management - all in one app!
           </p>
         </div>
 
@@ -40,36 +40,36 @@ export function FreeGuideCTA() {
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold mb-4">
-                  Complete Financial Planning Starter Guide
+                  MoneyZenGuide Windows Desktop App
                 </h3>
                 <p className="text-blue-100 mb-6">
-                  Everything you need to know to start your financial journey. 
-                  From budgeting to investing, this guide covers it all.
+                  Powerful financial planning software with advanced calculators, 
+                  portfolio tracking, and offline access for complete privacy.
                 </p>
                 
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
-                    <span>45 pages of expert financial advice</span>
+                    <span>Advanced financial calculators</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
-                    <span>Step-by-step action plans</span>
+                    <span>Portfolio tracking & analysis</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
-                    <span>Real-world examples and case studies</span>
+                    <span>Offline access & data privacy</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
-                    <span>Budget templates and worksheets</span>
+                    <span>Windows 10/11 compatible</span>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-center lg:justify-start space-x-6 text-sm text-blue-100">
                   <div className="flex items-center">
                     <Users className="h-4 w-4 mr-1" />
-                    12K+ downloads
+                    15K+ downloads
                   </div>
                   <div className="flex items-center">
                     <Star className="h-4 w-4 mr-1 text-blue-200" />
@@ -84,21 +84,21 @@ export function FreeGuideCTA() {
           <div className="text-center">
             <div className="bg-white rounded-2xl p-8 shadow-2xl">
               <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                Download Your Free Guide Now!
+                Download Windows App Now!
               </h3>
               <p className="text-gray-600 mb-8">
-                No signup required • Instant download • 100% free forever
+                No signup required • 50MB download • 100% free forever
               </p>
               
               <div className="space-y-4 mb-8">
                 <Button 
                   size="lg" 
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg py-6"
+                  className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6"
                   asChild
                 >
                   <Link href="/downloads">
                     <Download className="mr-2 h-5 w-5" />
-                    Download FREE Guide
+                    Download Windows App
                   </Link>
                 </Button>
                 
@@ -109,16 +109,16 @@ export function FreeGuideCTA() {
                   asChild
                 >
                   <Link href="/downloads">
-                    View All Free Guides
+                    Also Get PDF Guide
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
               </div>
 
               <div className="text-sm text-gray-500">
-                <p>✅ No credit card required</p>
-                <p>✅ No email signup needed</p>
-                <p>✅ Instant access</p>
+                <p>✅ Windows 10/11 compatible</p>
+                <p>✅ No ads or malware</p>
+                <p>✅ Offline access</p>
               </div>
             </div>
 
@@ -127,7 +127,7 @@ export function FreeGuideCTA() {
               <p className="text-blue-100 text-sm mb-4">Trusted by thousands of users</p>
               <div className="flex justify-center space-x-8 text-blue-100">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-200">12K+</div>
+                  <div className="text-2xl font-bold text-blue-200">15K+</div>
                   <div className="text-xs">Downloads</div>
                 </div>
                 <div className="text-center">
@@ -135,8 +135,8 @@ export function FreeGuideCTA() {
                   <div className="text-xs">Rating</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-200">$1M</div>
-                  <div className="text-xs">Assets Helped</div>
+                  <div className="text-2xl font-bold text-blue-200">50MB</div>
+                  <div className="text-xs">App Size</div>
                 </div>
               </div>
             </div>
