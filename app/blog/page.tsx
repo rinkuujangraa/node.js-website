@@ -35,7 +35,7 @@ const blogPosts = [
   {
     id: 3,
     title: 'Retirement Planning: Start Early, Retire Comfortably',
-    excerpt: 'A comprehensive guide to retirement planning strategies for different life stages.',
+    excerpt: 'A comprehensive guide to retirement planning for different life stages.',
     author: 'Emily Rodriguez',
     date: '2024-01-10',
     category: 'Retirement',
@@ -71,11 +71,11 @@ const blogPosts = [
   {
     id: 6,
     title: 'Debt Management: From Overwhelmed to Debt-Free',
-    excerpt: 'Practical strategies to tackle debt and build a path to financial freedom.',
+    excerpt: 'Practical strategies to tackle debt and build a path to financial stability.',
     author: 'Robert Taylor',
     date: '2024-01-03',
     category: 'Debt Management',
-    tags: ['Debt', 'Financial Freedom', 'Strategies'],
+    tags: ['Debt', 'Financial Stability', 'Strategies'],
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop&crop=center',
     slug: 'debt-management-strategies',
     readTime: '6 min read',
@@ -101,7 +101,7 @@ export default function BlogPage() {
             <span className="block text-blue-200">& Expert Insights</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
-            Discover financial peace with our latest articles, guides, and expert advice on personal finance, 
+            Discover financial peace with our latest articles, guides, and educational content on personal finance, 
             investing, and wealth building.
           </p>
         </div>

@@ -9,7 +9,7 @@ const faqCategories = [
     questions: [
       {
         question: 'What is Financial Guide?',
-        answer: 'Financial Guide is a comprehensive platform that provides financial planning tools, calculators, expert advice, and educational resources to help you make informed financial decisions and achieve your financial goals.'
+        answer: 'Financial Guide is a comprehensive platform that provides financial planning tools, calculators, educational content, and resources to help you make informed financial decisions and achieve your financial goals.'
       },
       {
         question: 'Is Financial Guide free to use?',
@@ -52,12 +52,12 @@ const faqCategories = [
     icon: TrendingUp,
     questions: [
       {
-        question: 'What investment advice do you provide?',
+        question: 'What investment guidance do you provide?',
         answer: 'We provide educational content and tools to help you understand investing. Our premium plans include personalized investment guidance from certified financial advisors.'
       },
       {
         question: 'How do I start investing?',
-        answer: 'Start with our free investment guide booklet, use our investment calculator to set goals, and consider our premium plans for personalized advice based on your risk tolerance and financial situation.'
+        answer: 'Start with our free investment guide booklet, use our investment calculator to set goals, and consider our premium plans for personalized guidance based on your risk tolerance and financial situation.'
       },
       {
         question: 'What is compound interest?',
@@ -101,7 +101,7 @@ const faqCategories = [
       },
       {
         question: 'What are the benefits of Premium?',
-        answer: 'Premium includes all free features plus advanced calculators, personalized investment advice, priority support, tax optimization tools, and detailed financial reports.'
+        answer: 'Premium includes all free features plus advanced calculators, personalized investment guidance, priority support, tax optimization tools, and detailed financial reports.'
       },
       {
         question: 'Can I cancel my subscription anytime?',

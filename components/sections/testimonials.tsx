@@ -18,7 +18,7 @@ const testimonials = [
   {
     name: 'Emily Rodriguez',
     role: 'Teacher',
-    content: 'As someone new to investing, this platform made everything so much clearer. The step-by-step guides and calculators gave me the confidence to start investing.',
+    content: 'As someone new to investing, this platform made everything so much clearer. The educational guides and calculators gave me the confidence to start investing.',
     rating: 5,
     avatar: '/api/placeholder/64/64',
   },

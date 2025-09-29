@@ -8,13 +8,13 @@ const features = [
   },
   {
     icon: BookOpen,
-    title: 'Expert Content',
-    description: 'Access to professional financial advice, guides, and market insights from certified experts.',
+    title: 'Educational Content',
+    description: 'Access to educational financial resources, guides, and market insights from financial professionals.',
   },
   {
     icon: TrendingUp,
     title: 'Investment Tools',
-    description: 'Advanced portfolio analysis, risk assessment, and investment strategy recommendations.',
+    description: 'Advanced portfolio analysis, risk assessment, and educational investment resources.',
   },
   {
     icon: Shield,
@@ -39,10 +39,10 @@ export function Features() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Why Choose FinanceWise?
+            Why Choose MoneyZenGuide?
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            FinanceWise provides all the tools, resources, and expert guidance 
+            MoneyZenGuide provides all the tools, resources, and educational content 
             you need to make informed financial decisions and achieve your wealth-building goals.
           </p>
         </div>

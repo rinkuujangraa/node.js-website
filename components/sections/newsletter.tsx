@@ -32,7 +32,7 @@ export function Newsletter() {
               Thank You for Subscribing!
             </h2>
             <p className="text-gray-600">
-              You'll receive our latest financial insights and tips directly in your inbox.
+              You'll receive our latest financial tips and educational content directly in your inbox.
             </p>
           </div>
         </div>
@@ -49,12 +49,12 @@ export function Newsletter() {
               <Mail className="h-8 w-8 text-blue-600" />
             </div>
           </div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Stay Updated with Financial Insights
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Stay Updated with Financial Tips
           </h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Get weekly financial tips, market updates, and exclusive content delivered 
-            straight to your inbox. Join thousands of subscribers making smarter financial decisions.
+            Get weekly financial tips, educational content, and exclusive resources delivered 
+            straight to your inbox. Join thousands of subscribers learning about personal finance.
           </p>
           
           <form onSubmit={handleSubmit} className="max-w-md mx-auto">

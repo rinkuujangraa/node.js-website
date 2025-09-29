@@ -35,7 +35,7 @@ const pricingPlans = [
       'All basic features',
       'Advanced calculators',
       'Premium financial guides',
-      'Personalized investment advice',
+      'Personalized investment guidance',
       'Priority support',
       'Tax optimization tools',
       'Retirement planning suite',

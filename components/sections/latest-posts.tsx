@@ -27,7 +27,7 @@ const latestPosts = [
   {
     id: 3,
     title: 'Retirement Planning: Start Early, Retire Comfortably',
-    excerpt: 'A comprehensive guide to retirement planning strategies for different life stages.',
+    excerpt: 'A comprehensive guide to retirement planning for different life stages.',
     author: 'Emily Rodriguez',
     date: '2024-01-10',
     category: 'Retirement',
@@ -42,10 +42,10 @@ export function LatestPosts() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Latest Financial Insights
+            Latest Financial Articles
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Stay informed with our latest articles, guides, and expert advice on personal finance, 
+            Stay informed with our latest articles, guides, and educational content on personal finance, 
             investing, and wealth building.
           </p>
         </div>

@@ -11,10 +11,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    default: 'MoneyZenGuide - Your Path to Financial Freedom',
+    default: 'MoneyZenGuide - Your Financial Planning Companion',
     template: '%s | MoneyZenGuide'
   },
-  description: 'Discover financial peace with MoneyZenGuide. Expert financial planning, calculators, and strategies to achieve your money goals with confidence.',
+  description: 'Discover financial peace with MoneyZenGuide. Educational financial planning tools, calculators, and strategies to help you achieve your money goals with confidence.',
   keywords: ['MoneyZenGuide', 'financial zen', 'financial planning', 'investment', 'savings', 'retirement', 'budgeting', 'financial calculators', 'wealth building', 'money management'],
   authors: [{ name: 'MoneyZenGuide Team' }],
   creator: 'MoneyZenGuide',
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://moneyzenguide.com',
-    title: 'MoneyZenGuide - Your Path to Financial Freedom',
-    description: 'Discover financial peace with MoneyZenGuide. Expert financial planning, calculators, and strategies to achieve your money goals with confidence.',
+    title: 'MoneyZenGuide - Your Financial Planning Companion',
+    description: 'Discover financial peace with MoneyZenGuide. Educational financial planning tools, calculators, and strategies to help you achieve your money goals with confidence.',
     siteName: 'MoneyZenGuide',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MoneyZenGuide - Your Path to Financial Freedom',
-    description: 'Discover financial peace with MoneyZenGuide. Expert financial planning, calculators, and strategies to achieve your money goals with confidence.',
+    title: 'MoneyZenGuide - Your Financial Planning Companion',
+    description: 'Discover financial peace with MoneyZenGuide. Educational financial planning tools, calculators, and strategies to help you achieve your money goals with confidence.',
     creator: '@moneyzenguide',
   },
   robots: {

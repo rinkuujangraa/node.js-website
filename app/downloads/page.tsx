@@ -7,48 +7,31 @@ import Link from 'next/link'
 
 export default function DownloadsPage() {
   useEffect(() => {
-    // Automatically trigger Windows app download when page loads
-    const downloadApp = () => {
-      // Track Windows app download conversion
-      if (typeof window !== 'undefined' && window.uetq) {
-        window.uetq.push('event', 'App_Download', {
-          'event_category': 'Download',
-          'event_label': 'MoneyZenGuide Windows App',
-          'value': 500
-        })
-      }
-      
+    // Track page visit for PDF guide download
+    const trackPageVisit = () => {
       // Track Google Analytics conversion
       if (typeof window !== 'undefined' && window.gtag) {
-        window.gtag('event', 'App_Download', {
-          'event_category': 'Download',
-          'event_label': 'MoneyZenGuide Windows App',
-          'value': 500
+        window.gtag('event', 'page_view', {
+          'page_title': 'Downloads Page - PDF Guide',
+          'page_location': window.location.href
         })
       }
       
       // Track Meta Pixel conversion
       if (typeof window !== 'undefined' && window.fbq) {
-        window.fbq('track', 'Lead', {
-          content_name: 'MoneyZenGuide Windows App',
+        window.fbq('track', 'ViewContent', {
+          content_name: 'Financial Planning PDF Guide',
           content_category: 'Download',
-          value: 5.00,
+          value: 1.00,
           currency: 'USD'
         })
       }
-      
-      const link = document.createElement('a')
-      link.href = '/api/downloads?file=MoneyZenGuide.msi'
-      link.download = 'MoneyZenGuide-Windows-App.msi'
-      document.body.appendChild(link)
-      link.click()
-      document.body.removeChild(link)
     }
 
-    // Small delay to ensure page is loaded
-    const timer = setTimeout(downloadApp, 1000)
+    // Track page visit
+    trackPageVisit()
     
-    return () => clearTimeout(timer)
+    // No cleanup needed for tracking
   }, [])
 
   return (
@@ -61,10 +44,10 @@ export default function DownloadsPage() {
             Download Started!
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Download Our Finance Guide App
+            Download Your Free Financial Planning Guide
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Download our powerful Windows desktop application for advanced financial planning, calculators, and portfolio management tools.
+            Get instant access to our comprehensive PDF guide plus the powerful Windows app for advanced financial planning, calculators, and portfolio management tools.
           </p>
         </div>
 
@@ -76,17 +59,17 @@ export default function DownloadsPage() {
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              MoneyZenGuide Windows App
+              Complete Financial Planning Package
             </h2>
             
             <p className="text-green-100 text-lg mb-8 max-w-2xl mx-auto">
-              The most powerful financial planning software for Windows. Advanced calculators, portfolio tracking, and complete offline access for maximum privacy.
+              Get our comprehensive PDF guide instantly, plus the powerful Windows app with advanced calculators, portfolio tracking, and complete offline access for maximum privacy.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
               <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg">
-                <div className="text-3xl font-bold text-white">50MB</div>
-                <div className="text-sm text-green-100">File Size</div>
+                <div className="text-3xl font-bold text-white">PDF</div>
+                <div className="text-sm text-green-100">Instant Download</div>
               </div>
               <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg">
                 <div className="text-3xl font-bold text-white">25K+</div>
@@ -121,52 +104,81 @@ export default function DownloadsPage() {
               </div>
             </div>
 
-            <Button 
-              size="lg" 
-              className="bg-white text-green-600 hover:bg-green-50 text-xl px-12 py-4 mb-6 font-bold shadow-lg"
-              onClick={() => {
-                // Track Windows app download
-                if (typeof window !== 'undefined' && window.uetq) {
-                  window.uetq.push('event', 'App_Download', {
-                    'event_category': 'Download',
-                    'event_label': 'MoneyZenGuide Windows App',
-                    'value': 500
-                  })
-                }
-                
-                if (typeof window !== 'undefined' && window.gtag) {
-                  window.gtag('event', 'App_Download', {
-                    'event_category': 'Download',
-                    'event_label': 'MoneyZenGuide Windows App',
-                    'value': 500
-                  })
-                }
-                
-                if (typeof window !== 'undefined' && window.fbq) {
-                  window.fbq('track', 'Lead', {
-                    content_name: 'MoneyZenGuide Windows App',
-                    content_category: 'Download',
-                    value: 5.00,
-                    currency: 'USD'
-                  })
-                }
-                
-                const link = document.createElement('a')
-                link.href = '/api/downloads?file=MoneyZenGuide.msi'
-                link.download = 'MoneyZenGuide-Windows-App.msi'
-                document.body.appendChild(link)
-                link.click()
-                document.body.removeChild(link)
-              }}
-            >
-              <Download className="mr-3 h-6 w-6" />
-              Download Now - FREE!
-            </Button>
+            <div className="space-y-4">
+              <Button 
+                size="lg" 
+                className="bg-white text-green-600 hover:bg-green-50 text-xl px-12 py-4 font-bold shadow-lg w-full md:w-auto"
+                onClick={() => {
+                  // Track PDF guide download
+                  if (typeof window !== 'undefined' && window.gtag) {
+                    window.gtag('event', 'PDF_Download', {
+                      'event_category': 'Download',
+                      'event_label': 'Financial Planning PDF Guide',
+                      'value': 1.00
+                    })
+                  }
+                  
+                  if (typeof window !== 'undefined' && window.fbq) {
+                    window.fbq('track', 'Lead', {
+                      content_name: 'Financial Planning PDF Guide',
+                      content_category: 'Download',
+                      value: 1.00,
+                      currency: 'USD'
+                    })
+                  }
+                  
+                  const link = document.createElement('a')
+                  link.href = '/downloads/financial-planning-starter-guide.pdf'
+                  link.download = 'Financial-Planning-Guide.pdf'
+                  document.body.appendChild(link)
+                  link.click()
+                  document.body.removeChild(link)
+                }}
+              >
+                <Download className="mr-3 h-6 w-6" />
+                Download PDF Guide - FREE!
+              </Button>
+              
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="border-2 border-white text-white hover:bg-white hover:text-green-600 text-lg px-8 py-3 font-bold w-full md:w-auto"
+                onClick={() => {
+                  // Track Windows app download
+                  if (typeof window !== 'undefined' && window.gtag) {
+                    window.gtag('event', 'App_Download', {
+                      'event_category': 'Download',
+                      'event_label': 'MoneyZenGuide Windows App',
+                      'value': 5.00
+                    })
+                  }
+                  
+                  if (typeof window !== 'undefined' && window.fbq) {
+                    window.fbq('track', 'Lead', {
+                      content_name: 'MoneyZenGuide Windows App',
+                      content_category: 'Download',
+                      value: 5.00,
+                      currency: 'USD'
+                    })
+                  }
+                  
+                  const link = document.createElement('a')
+                  link.href = '/api/downloads?file=MoneyZenGuide.exe'
+                  link.download = 'MoneyZenGuide-Windows-App.exe'
+                  document.body.appendChild(link)
+                  link.click()
+                  document.body.removeChild(link)
+                }}
+              >
+                <Download className="mr-3 h-5 w-5" />
+                Also Get Windows App
+              </Button>
+            </div>
 
             <div className="flex justify-center space-x-6 text-sm text-green-100">
+              <span>✅ Instant PDF download</span>
+              <span>✅ Windows app included</span>
               <span>✅ No signup required</span>
-              <span>✅ No ads or malware</span>
-              <span>✅ Instant download</span>
             </div>
           </div>
         </div>

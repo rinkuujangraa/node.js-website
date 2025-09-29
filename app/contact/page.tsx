@@ -66,7 +66,7 @@ export default function ContactPage() {
             <span className="block text-blue-200">We're Here to Help</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
-            Have questions about our financial tools or need personalized advice? 
+            Have questions about our financial tools or need personalized guidance? 
             Our team of experts is ready to assist you on your financial journey.
           </p>
         </div>

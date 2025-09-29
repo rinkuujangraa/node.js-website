@@ -93,7 +93,7 @@ const blogPosts = [
   {
     id: 3,
     title: 'Retirement Planning: Start Early, Retire Comfortably',
-    excerpt: 'A comprehensive guide to retirement planning strategies for different life stages.',
+    excerpt: 'A comprehensive guide to retirement planning for different life stages.',
     author: 'Emily Rodriguez',
     date: '2024-01-10',
     category: 'Retirement',
@@ -198,17 +198,17 @@ const blogPosts = [
   {
     id: 6,
     title: 'Debt Management: From Overwhelmed to Debt-Free',
-    excerpt: 'Practical strategies to tackle debt and build a path to financial freedom.',
+    excerpt: 'Practical strategies to tackle debt and build a path to financial stability.',
     author: 'Robert Taylor',
     date: '2024-01-03',
     category: 'Debt Management',
-    tags: ['Debt', 'Financial Freedom', 'Strategies'],
+    tags: ['Debt', 'Financial Stability', 'Strategies'],
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit=crop&crop=center',
     slug: 'debt-management-strategies',
     readTime: '6 min read',
     content: `
       <h2>Debt Management Strategies</h2>
-      <p>Debt can feel overwhelming, but with the right strategies, you can take control and work toward financial freedom.</p>
+      <p>Debt can feel overwhelming, but with the right strategies, you can take control and work toward financial stability.</p>
       
       <h3>Assess Your Debt Situation</h3>
       <p>Start by listing all your debts, including balances, interest rates, and minimum payments. This gives you a clear picture of what you're dealing with.</p>

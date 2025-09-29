@@ -20,12 +20,12 @@ export function FreeGuideCTA() {
             LIMITED TIME OFFER
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Download MoneyZenGuide
-            <span className="block text-blue-200">Windows App - FREE!</span>
+            Download Free Financial Planning Guide
+            <span className="block text-blue-200">PDF + Windows App - FREE!</span>
           </h2>
           <p className="text-lg md:text-xl mb-8 text-blue-100 max-w-4xl mx-auto">
-            Join over <strong className="text-blue-200">15,000+ users</strong> who have downloaded our powerful Windows desktop application. 
-            Advanced financial tools, calculators, and portfolio management - all in one app!
+            Join over <strong className="text-blue-200">15,000+ users</strong> who have downloaded our comprehensive financial planning guide. 
+            Get instant access to budgeting tips, investment strategies, and retirement planning - plus our Windows app!
           </p>
         </div>
 
@@ -40,14 +40,18 @@ export function FreeGuideCTA() {
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold mb-4">
-                  MoneyZenGuide Windows Desktop App
+                  Complete Financial Planning Package
                 </h3>
                 <p className="text-blue-100 mb-6">
-                  Powerful financial planning software with advanced calculators, 
+                  Get our comprehensive PDF guide plus powerful Windows app with advanced calculators, 
                   portfolio tracking, and offline access for complete privacy.
                 </p>
                 
                 <div className="space-y-3 mb-8">
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
+                    <span>Comprehensive PDF guide (instant download)</span>
+                  </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
                     <span>Advanced financial calculators</span>
@@ -58,11 +62,7 @@ export function FreeGuideCTA() {
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
-                    <span>Offline access & data privacy</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
-                    <span>Windows 10/11 compatible</span>
+                    <span>Windows app included (optional)</span>
                   </div>
                 </div>
 
@@ -84,10 +84,10 @@ export function FreeGuideCTA() {
           <div className="text-center">
             <div className="bg-white rounded-2xl p-8 shadow-2xl">
               <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                Download Windows App Now!
+                Get Your Free Financial Guide!
               </h3>
               <p className="text-gray-600 mb-8">
-                No signup required • 50MB download • 100% free forever
+                Instant PDF download • Windows app included • 100% free forever
               </p>
               
               <div className="space-y-4 mb-8">
@@ -98,7 +98,7 @@ export function FreeGuideCTA() {
                 >
                   <Link href="/downloads">
                     <Download className="mr-2 h-5 w-5" />
-                    Download Windows App
+                    Download Free PDF Guide
                   </Link>
                 </Button>
                 
@@ -109,16 +109,16 @@ export function FreeGuideCTA() {
                   asChild
                 >
                   <Link href="/downloads">
-                    Also Get PDF Guide
+                    Also Get Windows App
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
               </div>
 
               <div className="text-sm text-gray-500">
-                <p>✅ Windows 10/11 compatible</p>
-                <p>✅ No ads or malware</p>
-                <p>✅ Offline access</p>
+                <p>✅ Instant PDF download</p>
+                <p>✅ Windows app included</p>
+                <p>✅ No signup required</p>
               </div>
             </div>
 
@@ -135,8 +135,8 @@ export function FreeGuideCTA() {
                   <div className="text-xs">Rating</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-200">50MB</div>
-                  <div className="text-xs">App Size</div>
+                  <div className="text-2xl font-bold text-blue-200">PDF</div>
+                  <div className="text-xs">Guide</div>
                 </div>
               </div>
             </div>

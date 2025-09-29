@@ -56,7 +56,7 @@ export default function DashboardPage() {
     },
     {
       title: 'Retirement Planning Made Simple',
-      description: 'Step-by-step guide to secure your retirement',
+      description: 'Educational guide to retirement planning',
       pages: '38 pages',
       downloads: '6K+',
       featured: false,
@@ -168,7 +168,7 @@ export default function DashboardPage() {
                     <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-gray-900 dark:text-white">Actionable Steps</h4>
-                      <p className="text-sm text-gray-600 dark:text-gray-300">Practical advice you can implement today</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-300">Practical tips you can implement today</p>
                     </div>
                   </div>
                 </div>
@@ -266,7 +266,7 @@ export default function DashboardPage() {
                   Upgrade to Premium
                 </CardTitle>
                 <CardDescription className="text-purple-100">
-                  Unlock advanced features and personalized advice
+                  Unlock advanced features and personalized guidance
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -277,7 +277,7 @@ export default function DashboardPage() {
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="h-4 w-4 mr-2" />
-                    Personalized advice
+                    Personalized guidance
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="h-4 w-4 mr-2" />
