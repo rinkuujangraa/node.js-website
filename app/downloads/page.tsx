@@ -187,27 +187,27 @@ export default function DownloadsPage() {
         <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-lg shadow-lg p-8 mb-8">
           <div className="text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              Why Choose MoneyZenGuide Windows App?
+              Why Choose Our Financial Planning Package?
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="text-left">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">🚀 Advanced Features</h3>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">📚 Complete Guide</h3>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                  <li>• Portfolio tracking & analysis</li>
-                  <li>• Investment calculators</li>
-                  <li>• Budget planning tools</li>
-                  <li>• Retirement planning</li>
+                  <li>• Comprehensive PDF guide</li>
+                  <li>• Step-by-step instructions</li>
+                  <li>• Budget planning templates</li>
+                  <li>• Investment strategies</li>
                 </ul>
               </div>
               
               <div className="text-left">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">🔒 Privacy & Security</h3>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">💻 Windows App Bonus</h3>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+                  <li>• Advanced calculators</li>
+                  <li>• Portfolio tracking</li>
                   <li>• 100% offline access</li>
-                  <li>• No data collection</li>
-                  <li>• No internet required</li>
-                  <li>• Your data stays private</li>
+                  <li>• Complete privacy</li>
                 </ul>
               </div>
             </div>
@@ -218,16 +218,16 @@ export default function DownloadsPage() {
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                 <div className="text-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                  <div className="font-semibold text-gray-900 dark:text-white">Personal Finance</div>
-                  <div className="text-gray-600 dark:text-gray-300">Budgeting & savings</div>
+                  <div className="font-semibold text-gray-900 dark:text-white">PDF Guide</div>
+                  <div className="text-gray-600 dark:text-gray-300">Instant download & read</div>
                 </div>
                 <div className="text-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                  <div className="font-semibold text-gray-900 dark:text-white">Investment Planning</div>
-                  <div className="text-gray-600 dark:text-gray-300">Portfolio management</div>
+                  <div className="font-semibold text-gray-900 dark:text-white">Windows App</div>
+                  <div className="text-gray-600 dark:text-gray-300">Advanced tools & calculators</div>
                 </div>
                 <div className="text-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                  <div className="font-semibold text-gray-900 dark:text-white">Business Finance</div>
-                  <div className="text-gray-600 dark:text-gray-300">Accounting & analysis</div>
+                  <div className="font-semibold text-gray-900 dark:text-white">Complete Package</div>
+                  <div className="text-gray-600 dark:text-gray-300">Guide + software together</div>
                 </div>
               </div>
             </div>
