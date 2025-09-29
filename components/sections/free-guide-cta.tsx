@@ -21,11 +21,11 @@ export function FreeGuideCTA() {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Download Free Financial Planning Guide
-            <span className="block text-blue-200">PDF + Windows App - FREE!</span>
+            <span className="block text-blue-200">PDF - FREE!</span>
           </h2>
           <p className="text-lg md:text-xl mb-8 text-blue-100 max-w-4xl mx-auto">
             Join over <strong className="text-blue-200">15,000+ users</strong> who have downloaded our comprehensive financial planning guide. 
-            Get instant access to budgeting tips, investment strategies, and retirement planning - plus our Windows app!
+            Get instant access to budgeting tips, investment strategies, and retirement planning.
           </p>
         </div>
 
@@ -40,11 +40,11 @@ export function FreeGuideCTA() {
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold mb-4">
-                  Complete Financial Planning Package
+                  Free Financial Planning Guide
                 </h3>
                 <p className="text-blue-100 mb-6">
-                  Get our comprehensive PDF guide plus powerful Windows app with advanced calculators, 
-                  portfolio tracking, and offline access for complete privacy.
+                  Get our comprehensive PDF guide with step-by-step instructions, budgeting templates, 
+                  investment strategies, and retirement planning tools.
                 </p>
                 
                 <div className="space-y-3 mb-8">
@@ -54,15 +54,15 @@ export function FreeGuideCTA() {
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
-                    <span>Advanced financial calculators</span>
+                    <span>Step-by-step instructions</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
-                    <span>Portfolio tracking & analysis</span>
+                    <span>Budget planning templates</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
-                    <span>Windows app included (optional)</span>
+                    <span>Investment strategies & tools</span>
                   </div>
                 </div>
 
@@ -87,7 +87,7 @@ export function FreeGuideCTA() {
                 Get Your Free Financial Guide!
               </h3>
               <p className="text-gray-600 mb-8">
-                Instant PDF download • Windows app included • 100% free forever
+                Instant PDF download • Comprehensive guide • 100% free forever
               </p>
               
               <div className="space-y-4 mb-8">
@@ -102,22 +102,11 @@ export function FreeGuideCTA() {
                   </Link>
                 </Button>
                 
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="w-full text-lg py-6 border-2 border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400"
-                  asChild
-                >
-                  <Link href="/downloads">
-                    Also Get Windows App
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
               </div>
 
               <div className="text-sm text-gray-500">
                 <p>✅ Instant PDF download</p>
-                <p>✅ Windows app included</p>
+                <p>✅ Comprehensive guide</p>
                 <p>✅ No signup required</p>
               </div>
             </div>
