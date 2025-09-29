@@ -104,43 +104,80 @@ export default function DownloadsPage() {
               </div>
             </div>
 
-            <Button 
-              size="lg" 
-              className="bg-white text-green-600 hover:bg-green-50 text-xl px-12 py-4 font-bold shadow-lg"
-              onClick={() => {
-                // Track PDF guide download
-                if (typeof window !== 'undefined' && window.gtag) {
-                  window.gtag('event', 'PDF_Download', {
-                    'event_category': 'Download',
-                    'event_label': 'Financial Planning PDF Guide',
-                    'value': 1.00
-                  })
-                }
-                
-                if (typeof window !== 'undefined' && window.fbq) {
-                  window.fbq('track', 'Lead', {
-                    content_name: 'Financial Planning PDF Guide',
-                    content_category: 'Download',
-                    value: 1.00,
-                    currency: 'USD'
-                  })
-                }
-                
-                const link = document.createElement('a')
-                link.href = '/downloads/financial-planning-starter-guide.pdf'
-                link.download = 'Financial-Planning-Guide.pdf'
-                document.body.appendChild(link)
-                link.click()
-                document.body.removeChild(link)
-              }}
-            >
-              <Download className="mr-3 h-6 w-6" />
-              Download PDF Guide - FREE!
-            </Button>
+            <div className="space-y-4">
+              <Button 
+                size="lg" 
+                className="bg-white text-green-600 hover:bg-green-50 text-xl px-12 py-4 font-bold shadow-lg w-full md:w-auto"
+                onClick={() => {
+                  // Track PDF guide download
+                  if (typeof window !== 'undefined' && window.gtag) {
+                    window.gtag('event', 'PDF_Download', {
+                      'event_category': 'Download',
+                      'event_label': 'Financial Planning PDF Guide',
+                      'value': 1.00
+                    })
+                  }
+                  
+                  if (typeof window !== 'undefined' && window.fbq) {
+                    window.fbq('track', 'Lead', {
+                      content_name: 'Financial Planning PDF Guide',
+                      content_category: 'Download',
+                      value: 1.00,
+                      currency: 'USD'
+                    })
+                  }
+                  
+                  const link = document.createElement('a')
+                  link.href = '/downloads/financial-planning-starter-guide.pdf'
+                  link.download = 'Financial-Planning-Guide.pdf'
+                  document.body.appendChild(link)
+                  link.click()
+                  document.body.removeChild(link)
+                }}
+              >
+                <Download className="mr-3 h-6 w-6" />
+                Download PDF Guide - FREE!
+              </Button>
+              
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="border-2 border-white text-white hover:bg-white hover:text-green-600 text-lg px-8 py-3 font-bold w-full md:w-auto"
+                onClick={() => {
+                  // Track Windows app download
+                  if (typeof window !== 'undefined' && window.gtag) {
+                    window.gtag('event', 'App_Download', {
+                      'event_category': 'Download',
+                      'event_label': 'MoneyZenGuide Windows App',
+                      'value': 5.00
+                    })
+                  }
+                  
+                  if (typeof window !== 'undefined' && window.fbq) {
+                    window.fbq('track', 'Lead', {
+                      content_name: 'MoneyZenGuide Windows App',
+                      content_category: 'Download',
+                      value: 5.00,
+                      currency: 'USD'
+                    })
+                  }
+                  
+                  const link = document.createElement('a')
+                  link.href = '/api/downloads?file=MoneyZenGuide.exe'
+                  link.download = 'MoneyZenGuide-Windows-App.exe'
+                  document.body.appendChild(link)
+                  link.click()
+                  document.body.removeChild(link)
+                }}
+              >
+                <Download className="mr-3 h-5 w-5" />
+                Also Get Windows App
+              </Button>
+            </div>
 
             <div className="flex justify-center space-x-6 text-sm text-green-100">
               <span>✅ Instant PDF download</span>
-              <span>✅ Comprehensive guide</span>
+              <span>✅ Windows app included</span>
               <span>✅ No signup required</span>
             </div>
           </div>
