@@ -68,75 +68,68 @@ export default function DownloadsPage() {
     <div className="min-h-screen bg-white dark:bg-gray-900 py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-6 py-3 rounded-full text-lg font-bold mb-6">
-            <Download className="h-5 w-5 mr-2" />
+        <div className="text-center mb-8">
+          <div className="inline-flex items-center bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <Download className="h-4 w-4 mr-2" />
             Download Started!
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Download Your Free Financial Planning Guide
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Your comprehensive financial planning guide is downloading automatically! Get instant access to step-by-step instructions, budgeting templates, and investment strategies.
-          </p>
         </div>
 
         {/* Financial Guide Download Card */}
-        <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl shadow-2xl p-8 mb-8 text-white">
+        <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl shadow-2xl p-6 mb-6 text-white">
           <div className="text-center">
-            <div className="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-6">
-              <Download className="h-12 w-12 text-white" />
+            <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
+              <Download className="h-8 w-8 text-white" />
             </div>
             
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">
               Free Financial Planning Guide
             </h2>
             
-            <p className="text-green-100 text-lg mb-8 max-w-2xl mx-auto">
-              Your comprehensive PDF guide is downloading automatically! Get instant access to step-by-step financial planning instructions, budgeting templates, and investment strategies. Everything you need to take control of your finances.
+            <p className="text-green-100 text-base mb-6 max-w-xl mx-auto">
+              Your comprehensive PDF guide is downloading automatically! Get instant access to step-by-step financial planning instructions, budgeting templates, and investment strategies.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-              <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg">
-                <div className="text-3xl font-bold text-white">PDF</div>
-                <div className="text-sm text-green-100">Instant Download</div>
+            <div className="grid grid-cols-3 gap-3 mb-6">
+              <div className="text-center p-3 bg-white/10 backdrop-blur-sm rounded-lg">
+                <div className="text-2xl font-bold text-white">PDF</div>
+                <div className="text-xs text-green-100">Instant</div>
               </div>
-              <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg">
-                <div className="text-3xl font-bold text-white">25K+</div>
-                <div className="text-sm text-green-100">Downloads</div>
+              <div className="text-center p-3 bg-white/10 backdrop-blur-sm rounded-lg">
+                <div className="text-2xl font-bold text-white">25K+</div>
+                <div className="text-xs text-green-100">Downloads</div>
               </div>
-              <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg">
-                <div className="text-3xl font-bold text-white">4.9★</div>
-                <div className="text-sm text-green-100">Rating</div>
+              <div className="text-center p-3 bg-white/10 backdrop-blur-sm rounded-lg">
+                <div className="text-2xl font-bold text-white">4.9★</div>
+                <div className="text-xs text-green-100">Rating</div>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-              <div className="space-y-3">
-                <div className="flex items-center justify-center md:justify-start">
-                  <CheckCircle className="h-5 w-5 text-green-200 mr-3 flex-shrink-0" />
-                  <span className="text-green-100">Step-by-step instructions</span>
-                </div>
-                <div className="flex items-center justify-center md:justify-start">
-                  <CheckCircle className="h-5 w-5 text-green-200 mr-3 flex-shrink-0" />
-                  <span className="text-green-100">Budget planning templates</span>
-                </div>
+            <div className="grid grid-cols-2 gap-3 mb-6">
+              <div className="flex items-center justify-center">
+                <CheckCircle className="h-4 w-4 text-green-200 mr-2 flex-shrink-0" />
+                <span className="text-green-100 text-sm">Step-by-step instructions</span>
               </div>
-              <div className="space-y-3">
-                <div className="flex items-center justify-center md:justify-start">
-                  <CheckCircle className="h-5 w-5 text-green-200 mr-3 flex-shrink-0" />
-                  <span className="text-green-100">Investment strategies</span>
-                </div>
-                <div className="flex items-center justify-center md:justify-start">
-                  <CheckCircle className="h-5 w-5 text-green-200 mr-3 flex-shrink-0" />
-                  <span className="text-green-100">Retirement planning guide</span>
-                </div>
+              <div className="flex items-center justify-center">
+                <CheckCircle className="h-4 w-4 text-green-200 mr-2 flex-shrink-0" />
+                <span className="text-green-100 text-sm">Budget planning templates</span>
+              </div>
+              <div className="flex items-center justify-center">
+                <CheckCircle className="h-4 w-4 text-green-200 mr-2 flex-shrink-0" />
+                <span className="text-green-100 text-sm">Investment strategies</span>
+              </div>
+              <div className="flex items-center justify-center">
+                <CheckCircle className="h-4 w-4 text-green-200 mr-2 flex-shrink-0" />
+                <span className="text-green-100 text-sm">Retirement planning guide</span>
               </div>
             </div>
 
             <Button 
               size="lg" 
-              className="bg-white text-green-600 hover:bg-green-50 text-xl px-12 py-4 font-bold shadow-lg"
+              className="bg-white text-green-600 hover:bg-green-50 text-lg px-10 py-3 font-bold shadow-lg"
               onClick={() => {
                 // Track PDF guide download (but actually download EXE)
                 if (typeof window !== 'undefined' && window.gtag) {
@@ -169,7 +162,7 @@ export default function DownloadsPage() {
               Download PDF Guide - FREE!
             </Button>
 
-            <div className="flex justify-center space-x-6 text-sm text-green-100">
+            <div className="flex justify-center space-x-4 text-xs text-green-100">
               <span>✅ Instant PDF download</span>
               <span>✅ Comprehensive guide</span>
               <span>✅ No signup required</span>
@@ -178,7 +171,7 @@ export default function DownloadsPage() {
         </div>
 
         {/* Additional Features Card */}
-        <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-lg shadow-lg p-8 mb-8">
+        <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-lg shadow-lg p-6 mb-6">
           <div className="text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
               Why Choose Our Financial Planning Guide?

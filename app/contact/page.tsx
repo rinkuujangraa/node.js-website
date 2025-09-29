@@ -174,35 +174,25 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 dark:text-white">Email</h3>
-                    <p className="text-gray-600 dark:text-gray-300">support@financialguide.com</p>
+                    <p className="text-gray-600 dark:text-gray-300">support@moneyzenguide.com</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                       We respond within 24 hours
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="p-3 bg-green-100 dark:bg-green-900 rounded-lg">
-                    <Phone className="h-6 w-6 text-green-600 dark:text-green-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white">Phone</h3>
-                    <p className="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      Mon-Fri 9AM-6PM EST
-                    </p>
-                  </div>
-                </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="p-3 bg-purple-100 dark:bg-purple-900 rounded-lg">
                     <MapPin className="h-6 w-6 text-purple-600 dark:text-purple-400" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white">Address</h3>
+                    <h3 className="font-semibold text-gray-900 dark:text-white">Online Service</h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      123 Financial Street<br />
-                      New York, NY 10001
+                      MoneyZenGuide Financial Services<br />
+                      Digital Platform - Remote Operations<br />
+                      Serving customers worldwide<br />
+                      Online Support Available 24/7
                     </p>
                   </div>
                 </div>
@@ -212,11 +202,12 @@ export default function ContactPage() {
                     <Clock className="h-6 w-6 text-orange-600 dark:text-orange-400" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white">Business Hours</h3>
+                    <h3 className="font-semibold text-gray-900 dark:text-white">Support Hours</h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      Monday - Friday: 9:00 AM - 6:00 PM<br />
-                      Saturday: 10:00 AM - 4:00 PM<br />
-                      Sunday: Closed
+                      Monday - Friday: 9:00 AM - 6:00 PM PST<br />
+                      Saturday: 10:00 AM - 4:00 PM PST<br />
+                      Sunday: Email support only<br />
+                      <span className="text-sm text-blue-600">24/7 Online Platform Access</span>
                     </p>
                   </div>
                 </div>
