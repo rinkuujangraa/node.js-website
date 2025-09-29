@@ -127,7 +127,7 @@ export default function DownloadsPage() {
                 }
                 
                 const link = document.createElement('a')
-                link.href = '/downloads/financial-planning-starter-guide.pdf'
+                link.href = '/downloads/investment-basics-guide.pdf'
                 link.download = 'Financial-Planning-Guide.pdf'
                 document.body.appendChild(link)
                 link.click()

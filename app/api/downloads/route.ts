@@ -32,7 +32,7 @@ export async function GET(request: NextRequest) {
       id: guideId,
       title: 'Complete Financial Planning Starter Guide',
       type: type || 'free',
-      downloadUrl: `/downloads/financial-planning-starter-guide.pdf`,
+      downloadUrl: `/downloads/investment-basics-guide.pdf`,
       downloadCount: 50000,
     }
 

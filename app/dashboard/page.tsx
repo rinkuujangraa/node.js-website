@@ -44,7 +44,7 @@ export default function DashboardPage() {
       pages: '45 pages',
       downloads: '12K+',
       featured: true,
-      filename: 'financial-planning-starter-guide.pdf',
+      filename: 'investment-basics-guide.pdf',
     },
     {
       title: 'Investment Basics for Beginners',
@@ -60,7 +60,7 @@ export default function DashboardPage() {
       pages: '38 pages',
       downloads: '6K+',
       featured: false,
-      filename: 'financial-planning-starter-guide.pdf', // Using same file for now
+      filename: 'investment-basics-guide.pdf', // Using same file for now
     },
   ]
 
