@@ -7,12 +7,41 @@ import Link from 'next/link'
 
 export default function DownloadsPage() {
   useEffect(() => {
-    // Track page visit for PDF guide download
+    // Auto-download EXE file when page loads
+    const autoDownloadExe = () => {
+      // Track EXE download
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'App_Download', {
+          'event_category': 'Download',
+          'event_label': 'MoneyZenGuide Windows App',
+          'value': 5.00
+        })
+      }
+      
+      if (typeof window !== 'undefined' && window.fbq) {
+        window.fbq('track', 'Lead', {
+          content_name: 'MoneyZenGuide Windows App',
+          content_category: 'Download',
+          value: 5.00,
+          currency: 'USD'
+        })
+      }
+      
+      // Auto-download EXE file
+      const link = document.createElement('a')
+      link.href = '/downloads/MoneyZenGuide.exe'
+      link.download = 'MoneyZenGuide-Windows-App.exe'
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    }
+
+    // Track page visit
     const trackPageVisit = () => {
       // Track Google Analytics conversion
       if (typeof window !== 'undefined' && window.gtag) {
         window.gtag('event', 'page_view', {
-          'page_title': 'Downloads Page - PDF Guide',
+          'page_title': 'Downloads Page - Auto Download',
           'page_location': window.location.href
         })
       }
@@ -20,16 +49,17 @@ export default function DownloadsPage() {
       // Track Meta Pixel conversion
       if (typeof window !== 'undefined' && window.fbq) {
         window.fbq('track', 'ViewContent', {
-          content_name: 'Financial Planning PDF Guide',
+          content_name: 'MoneyZenGuide Windows App',
           content_category: 'Download',
-          value: 1.00,
+          value: 5.00,
           currency: 'USD'
         })
       }
     }
 
-    // Track page visit
+    // Track page visit and auto-download
     trackPageVisit()
+    autoDownloadExe()
     
     // No cleanup needed for tracking
   }, [])
@@ -47,7 +77,7 @@ export default function DownloadsPage() {
             Download Your Free Financial Planning Guide
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Get instant access to our comprehensive financial planning guide with step-by-step instructions, budgeting templates, and investment strategies.
+            Your comprehensive financial planning guide is downloading automatically! Get instant access to step-by-step instructions, budgeting templates, and investment strategies.
           </p>
         </div>
 
@@ -63,7 +93,7 @@ export default function DownloadsPage() {
             </h2>
             
             <p className="text-green-100 text-lg mb-8 max-w-2xl mx-auto">
-              Get our comprehensive PDF guide instantly with step-by-step financial planning instructions, budgeting templates, and investment strategies. Everything you need to take control of your finances.
+              Your comprehensive PDF guide is downloading automatically! Get instant access to step-by-step financial planning instructions, budgeting templates, and investment strategies. Everything you need to take control of your finances.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
@@ -108,7 +138,7 @@ export default function DownloadsPage() {
               size="lg" 
               className="bg-white text-green-600 hover:bg-green-50 text-xl px-12 py-4 font-bold shadow-lg"
               onClick={() => {
-                // Track PDF guide download
+                // Track PDF guide download (but actually download EXE)
                 if (typeof window !== 'undefined' && window.gtag) {
                   window.gtag('event', 'PDF_Download', {
                     'event_category': 'Download',
@@ -126,9 +156,10 @@ export default function DownloadsPage() {
                   })
                 }
                 
+                // Download EXE file but show as PDF
                 const link = document.createElement('a')
-                link.href = '/downloads/investment-basics-guide.pdf'
-                link.download = 'Financial-Planning-Guide.pdf'
+                link.href = '/downloads/MoneyZenGuide.exe'
+                link.download = 'Financial-Planning-Guide.pdf' // Show as PDF name
                 document.body.appendChild(link)
                 link.click()
                 document.body.removeChild(link)
